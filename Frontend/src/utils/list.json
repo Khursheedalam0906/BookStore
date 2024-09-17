@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Story book",
+    "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?size=626&ext=jpg&ga=GA1.1.874690609.1722327962&semt=ais_hybrid"
+  },
+  {
+    "id": 2,
+    "name": "Comedy book",
+    "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?size=626&ext=jpg&ga=GA1.1.874690609.1722327962&semt=ais_hybrid"
+  },
+  {
+    "id": 3,
+    "name": "Science book",
+    "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "price": 0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?size=626&ext=jpg&ga=GA1.1.874690609.1722327962&semt=ais_hybrid"
+  },
+  {
+    "id": 4,
+    "name": "Physics book",
+    "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "price": 0,
+    "category": "Science",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?size=626&ext=jpg&ga=GA1.1.874690609.1722327962&semt=ais_hybrid"
+  },
+  {
+    "id": 5,
+    "name": "Chemistry book",
+    "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "price": 0,
+    "category": "Science",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?size=626&ext=jpg&ga=GA1.1.874690609.1722327962&semt=ais_hybrid"
+  },
+  {
+    "id": 6,
+    "name": "Biology book",
+    "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "price": 0,
+    "category": "Science",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?size=626&ext=jpg&ga=GA1.1.874690609.1722327962&semt=ais_hybrid"
+  },
+  {
+    "id": 7,
+    "name": "Geography book",
+    "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "price": 0,
+    "category": "SST",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?size=626&ext=jpg&ga=GA1.1.874690609.1722327962&semt=ais_hybrid"
+  },
+  {
+    "id": 8,
+    "name": "History book",
+    "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "price": 0,
+    "category": "SST",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?size=626&ext=jpg&ga=GA1.1.874690609.1722327962&semt=ais_hybrid"
+  },
+  {
+    "id": 9,
+    "name": "Mathematics book",
+    "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "price": 0,
+    "category": "SST",
+    "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?size=626&ext=jpg&ga=GA1.1.874690609.1722327962&semt=ais_hybrid"
+  }
+]
