@@ -1,12 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Login from "./Login";
+import { AuthContext } from "../context/AuthProvider";
+import Logout from "./Logout";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
   );
+
+  const [authUser, setAuthUser] = useContext(AuthContext);
+  console.log(authUser);
 
   const element = document.documentElement;
 
@@ -86,7 +91,9 @@ const Navbar = () => {
               {navitems}
             </ul>
           </div>
-          <a className="text-2xl font-bold cursor-pointer">BookStore</a>
+          <Link to="/" className="text-2xl font-bold cursor-pointer">
+            BookStore
+          </Link>
         </div>
         <div className="navbar-end">
           <div className="navbar-center hidden lg:flex">
@@ -145,15 +152,21 @@ const Navbar = () => {
               </svg>
             </label>
           </div>
-          <div className="">
-            <a
-              className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer"
-              onClick={() => document.getElementById("my_modal_3").showModal()}
-            >
-              Login
-            </a>
-            <Login />
-          </div>
+          {authUser ? (
+            <Logout />
+          ) : (
+            <div className="">
+              <a
+                className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer"
+                onClick={() =>
+                  document.getElementById("my_modal_3").showModal()
+                }
+              >
+                Login
+              </a>
+              <Login />
+            </div>
+          )}
         </div>
       </div>
     </div>

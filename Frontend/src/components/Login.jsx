@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import axios from "axios";
+import toast from "react-hot-toast";
 
 const Login = () => {
   const [loginSignup, setLoginSignup] = useState(true);
@@ -20,14 +22,28 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-      console.log(login);
-    } catch (error) {}
+      const response = await axios.post("http://localhost:8000/signin", login);
+      if (response?.data?.success) {
+        localStorage.setItem("User", JSON.stringify(response.data.user));
+        toast.success(response.data.message);
+        window.location.reload();
+      }
+    } catch (error) {
+      toast.error(error.response.data.message);
+    }
   };
 
   const handleSignup = async () => {
     try {
-      console.log(signup);
-    } catch (error) {}
+      const response = await axios.post("http://localhost:8000/signup", signup);
+      if (response.data.success) {
+        localStorage.setItem("User", JSON.stringify(response.data.user));
+        toast.success(response.data.message);
+        window.location.reload();
+      }
+    } catch (error) {
+      toast.error(error.response.data.message);
+    }
   };
 
   return (
@@ -36,7 +52,7 @@ const Login = () => {
         <div className="modal-box">
           {loginSignup ? (
             <>
-              <form method="dialog" onSubmit={handleLogin}>
+              <form method="dialog">
                 <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
                   ✕
                 </button>
@@ -85,7 +101,9 @@ const Login = () => {
                   </label>
                 </div>
                 <div className="flex justify-around items-center mt-4">
-                  <button className="btn btn-secondary">Login</button>
+                  <button className="btn btn-secondary" onClick={handleLogin}>
+                    Login
+                  </button>
                   <p>
                     Not register?{" "}
                     <span
